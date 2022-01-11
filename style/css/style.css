@@ -85,6 +85,7 @@ p {
   flex-direction: column;
 }
 .annual-plan-container a {
+  color: #3829e0;
   font-size: 1.5rem;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 700;
