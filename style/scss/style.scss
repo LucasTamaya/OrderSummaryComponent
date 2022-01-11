@@ -1,2 +1,162 @@
 @import "./variables";
 @import "./mixins";
+
+// Reset css
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+// End Reset css
+
+// Style général
+:root{
+    font-size: 10px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: $pattern-bg-mobile;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flexCenter;
+    padding: 80px 30px;
+}
+
+h1{
+    font-size: 2.3rem;
+    font-family: $primary-font;
+    font-weight: 900;
+    color: $neutral-clr-three;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.7rem;
+    font-family: $primary-font;
+    font-weight: 900;
+    color: $neutral-clr-three;
+}
+
+p{
+    font-size: 1.6rem;
+    font-family: $primary-font;
+    color: $neutral-clr-two;
+}
+// End Style général
+
+// Main container
+.main-container{
+    width: 330px;
+    height: 550px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 20px 0px rgb(175, 164, 164);
+    overflow: hidden;
+    @include flexCenter;
+    flex-direction: column;
+    row-gap: 30px;
+
+    p{
+        text-align: center;
+    }
+}
+// End Main container
+
+// Illustration Hero container
+.illustration-hero-container{
+    width: 100%;
+    flex-basis: 35%;
+    background-image: url("../../images/illustration-hero.svg");
+    background-position: center;
+    background-size: cover;
+}
+// End Illustration Hero container
+
+
+// Order Summary container
+.order-summary-container{
+    flex-basis: 65%;
+    padding: 0 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+// End  Order Summary container
+
+// Annual Plan container
+.annual-plan-container{
+    @include flexBetween;
+
+    .annual-plan{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    a{
+        font-size: 1.5rem;
+        font-family: $primary-font;
+        font-weight: 700;
+        transition: 0.2s ease;
+        cursor: pointer;
+
+        &:hover{
+            color: $hover-clr;
+            text-decoration: none;
+        }
+    }
+
+}
+// End Annual Plan container
+
+// Buttons
+.cta-btn{
+    border: none;
+    background-color: $primary-clr-two;
+    padding: 15px 0;
+    border-radius: 15px;
+    color: white;
+    font-family: $primary-font;
+    font-weight: 900;
+    font-size: 1.5rem;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $hover-clr;
+    }
+}
+
+.cancel-btn{
+    border: none;
+    background-color: transparent;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $neutral-clr-two;
+    transition: color 0.2s ease;
+    cursor: pointer;
+
+    &:hover{
+        color: $neutral-clr-three;
+    }
+}
+// End Buttons
+
+// Laptop screen
+@media screen and (min-width: 1440px) {
+    body{
+        background-image: $pattern-bg-desktop;
+        background-position: center bottom;
+
+    }
+}
+// Laptop screen
+
+
+
+
+
+

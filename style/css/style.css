@@ -1,3 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+:root {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 30px;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: #1f2f56;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif;
+  color: #7280a7;
+}
+
+.main-container {
+  width: 330px;
+  height: 550px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 1px 1px 20px 0px #afa4a4;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.main-container p {
+  text-align: center;
+}
+
+.illustration-hero-container {
+  width: 100%;
+  flex-basis: 35%;
+  background-image: url("../../images/illustration-hero.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+.order-summary-container {
+  flex-basis: 65%;
+  padding: 0 30px 40px 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.annual-plan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.annual-plan-container .annual-plan {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.annual-plan-container a {
+  font-size: 1.5rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.annual-plan-container a:hover {
+  color: #7168df;
+  text-decoration: none;
+}
+
+.cta-btn {
+  border: none;
+  background-color: #3829e0;
+  padding: 15px 0;
+  border-radius: 15px;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.cta-btn:hover {
+  background-color: #7168df;
+}
+
+.cancel-btn {
+  border: none;
+  background-color: transparent;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #7280a7;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+.cancel-btn:hover {
+  color: #1f2f56;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url("../../images/pattern-background-desktop.svg");
+    background-position: center bottom;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
