@@ -46,7 +46,7 @@ p {
   height: 550px;
   border-radius: 15px;
   background-color: white;
-  box-shadow: 1px 1px 20px 0px #afa4a4;
+  box-shadow: 0px 20px 20px 0px #afa4a4ad;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -129,7 +129,12 @@ p {
 @media screen and (min-width: 1440px) {
   body {
     background-image: url("../../images/pattern-background-desktop.svg");
-    background-position: center bottom;
+    background-size: contain;
+  }
+
+  .main-container {
+    width: 400px;
+    height: 650px;
   }
 }
 
